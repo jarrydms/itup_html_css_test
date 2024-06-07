@@ -1,0 +1,80 @@
+<!-- 아래 차시 학습 시 활용하세요 :) 
+30. 지금까지 익힌 CSS 정리하고, 주석 이해하기 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">	
+		th, td {
+			/* 1픽셀, 단선, 검은색으로 표 안에 선을 표시 */ 
+		    border: 1px solid black; 
+		    /* 컬럼 내부 글자색은 darkblue로 적용 */ 
+		    color: darkblue;        
+		    /* 컬럼 내부 글자 폰트는 굴림폰트로 적용 */ 
+		    font-family: Gulim;
+		    /* 컬럼 내부 글자는 가운데 정렬 */ 
+		    text-align: left;
+		}
+		table {
+		    /* 테이블 위 아래 margin 10 픽셀 */
+		    margin-top: 10px;
+		    margin-bottom: 10px;
+		    /* 선 굵기 1픽셀, 단선, 검은색선 */
+		    border: 1px solid black;
+		    /* 선과 선 겹치기 */
+		    border-collapse: collapse;
+		    /* 테이블 가운데 정렬하기 */
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		th {
+			/* 위 padding 값은 5 픽셀 */ 
+		    padding-top: 10px;
+		    /* 아래 padding 값은 5 픽셀 */ 
+		    padding-bottom: 10px;
+		}
+		thead {
+			/* 표 머리글 배경색을 #90A4AE로 지정 */ 
+		    background-color: #90A4AE;
+		}
+		.highlight {
+		    background-color: #B0BEC5;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>연봉과 월실수령액 알아보기</caption>
+		<thead>
+			<tr>
+				<th>연봉</th>
+				<th>월실수령액</th>
+				<th>공제액(세금)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>7,400만원</td>
+				<td>5,031,896</td>
+				<td>1,134,770</td>
+			</tr>
+			<tr>
+				<td>9,200만원</td>
+				<td>6,031,916</td>
+				<td>1,634,750</td>
+			</tr>
+			<tr>
+				<td>1억1000만원</td>
+				<td>7,026,126</td>
+				<td>2,140,540</td>
+			</tr>
+			<tr>
+				<td class="highlight">1억3400만원</td>
+				<td class="highlight">8,001,246</td>
+				<td class="highlight">3,165,420</td>
+			</tr>		
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!-- 아래 차시 학습 시 활용하세요 :) 
+32. 시멘틱 웹과 CSS 적용 함께 실습하기 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		nav {
+			text-align: right;
+			font-size: 1.4em;
+			font-weight: bold;
+			background-color: #757575;
+			color: white;
+			padding: 10px;
+		}
+		.header {
+			background-color:#FAFAFA;
+			text-align: center;
+			font-size: 1.4em;
+			font-weight: bold;
+			padding: 10px;
+		}
+		.section {
+			background-color:#FAFAFA;
+			padding:20px;
+		}
+		caption {
+			font-size: 1.1em;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+		body {
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+			font-family: Gulim;
+		}
+		table {
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			border: 1px solid #212121; 
+			border-collapse: collapse;
+			padding: 10px;
+		}
+		th, td {
+			border: 1px solid #212121;
+			padding: 5px; 			
+		}
+		th {
+			background-color: #0277BD;
+			color: white;
+		}
+		.footer {
+			background-color: #424242;
+			color: white;
+			text-align: right;
+			font-size: 1.1em;
+			font-weight: bold;
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+<nav>
+	Home Contact
+</nav>
+
+<header class="header">
+	직장인을 위한 정보 모음
+</header>
+
+<section class="section">
+	<article>
+		<table>
+			<caption>연봉과 월실수령액 알아보기</caption>		
+			<thead>
+				<tr>
+					<th>연봉</th>
+					<th>월실수령액</th>
+					<th>공제액(세금)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>7,400만원</td>
+					<td>5,031,896</td>
+					<td>1,134,770</td>
+				</tr>
+				<tr>
+					<td>8,900만원</td>
+					<td>6,010,047</td>
+					<td>1,432,320</td>
+				</tr>
+				<tr>
+					<td>1억600만원</td>
+					<td>7,016,793</td>
+					<td>1,816,540</td>
+				</tr>
+				<tr>
+					<td>1억2600만원</td>
+					<td>8,045,090</td>
+					<td>2,454,910</td>
+				</tr>		
+			</tbody>
+		</table>	
+	</article>
+</section>
+
+<footer class="footer">
+	Copyright Dave Lee
+</footer>
+</body>
+</html>

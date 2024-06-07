@@ -1,0 +1,71 @@
+<!-- 아래 차시 학습 시 활용하세요 :) 
+22. CSS 박스모델 이해
+23. HTML5 와 호환성 이해: table 태그, CSS 프로퍼티 좀더 익혀보기 실습
+24. 화면에 보여지는 색상 표기 방법 이해하기
+25. CSS 적용 방법 세번째: style 태그로 적용해보기 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        table {
+            width: 400px;
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            color: darkblue;
+            font-size: 12px;
+            font-family: Gulim;
+            text-align: center;
+        }
+        th {
+            padding: 10px;
+            color: #212121;
+        }
+        td {
+            color: #424242;
+        }
+        thead {
+            background-color: #BDBDBD;
+        }
+	</style>
+</head>
+
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>연봉</th>
+            <th>월실수령액</th>
+            <th>공제액(세금)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>7,400만원</td>
+            <td>5,031,896</td>
+            <td>1,134,770</td>
+        </tr>
+        <tr>
+            <td>9,200만원</td>
+            <td>6,031,916</td>
+            <td>1,634,750</td>
+        </tr>
+        <tr>
+            <td>1억1000만원</td>
+            <td>7,026,126</td>
+            <td>2,140,540</td>
+        </tr>
+        <tr>
+            <td>1억3400만원</td>
+            <td>8,001,246</td>
+            <td>3,165,420</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

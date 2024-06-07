@@ -1,0 +1,63 @@
+<!-- 아래 차시 학습 시 활용하세요 :)
+54. HTML form 태그와 프론트엔드 및 백엔드 동작 이해
+55. HTML form 태그와 Javascript 연동 예제 코드 이해 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #f2b441;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .box1 {
+            background: #f2d541;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">ease</div>
+
+    <form>
+        <input type="password" name="data" id="passwordText">
+        <input type="submit" value="Sign In" id="signin">
+    </form>
+
+    <script type="text/javascript">
+        function makeRed(event) {
+            box.style.background = "red";
+        }
+        function makeBlue(event) {
+            box.style.background = "blue";
+        }
+        const box = document.querySelector(".box1");
+        box.addEventListener("mousemove", makeRed);
+        box.addEventListener("mouseout", makeBlue);
+
+        function checkPassword(event) {
+            const passwordData = document.querySelector("#passwordText");
+            let passwrodText = passwordData.value;
+            console.log(passwrodText);
+            if (passwrodText == "korea123") {
+                window.open("https://www.fun-coding.org", "_self");
+            } else {
+                alert("Access denied");
+            }
+        }
+
+        const signinButton = document.querySelector("#signin");
+        signinButton.addEventListener("click", checkPassword);
+
+    </script>
+</body>
+
+</html>

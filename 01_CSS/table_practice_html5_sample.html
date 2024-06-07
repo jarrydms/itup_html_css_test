@@ -1,0 +1,122 @@
+<!-- 아래 차시 학습 시 활용하세요 :) 
+32. 시멘틱 웹과 CSS 적용 함께 실습하기 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <style type="text/css">
+        nav {
+            font-size: 1.4em;
+            font-family: Gulim;
+            text-align: right;
+            font-weight: bold;
+			padding: 10px;
+			background-color:#70A0BF;
+			color:white;
+        }
+        header {
+            font-size: 1.3em;
+            font-family: Gulim;
+            text-align: center;
+            font-weight: bold;
+			background-color:#F5EEDC;
+			padding:10px;
+        }
+        section {
+            font-size: 1em;
+            font-family: Gulim;
+            text-align: left;
+            font-weight: lighter;
+			background-color:#F5EEDC;
+			padding:10px;			
+        }
+		footer {
+            font-size: 1em;
+            font-family: Gulim;
+            text-align: right;
+            font-weight: bold;
+			background-color:#F0986C;
+			padding:10px;
+		}
+		table {
+			margin-left: auto;
+			margin-right: auto;
+			width: 500px;
+			border: 1px solid;
+			border-collapse: collapse;
+			padding:10px;
+		}
+		th, td {
+			border: 1px solid #2D6891;
+			padding:10px;
+		}
+		th {
+			background-color: #2D6891;
+			color:white;
+		}
+		body {
+			width:800px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		caption {
+            font-size: 1.2em;
+            font-family: Gulim;
+            text-align: center;
+            margin-bottom: 10px;
+		}
+    </style>	
+</head>
+
+<body>
+<nav>
+	Home Contact
+</nav>
+
+<header class="header">
+	직장인을 위한 정보 모음
+</header>
+
+<section class="section">
+	<article>
+		<table>
+			<caption>연봉과 월실수령액 알아보기</caption>		
+			<thead>
+				<tr>
+					<th>연봉</th>
+					<th>월실수령액</th>
+					<th>공제액(세금)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>7,400만원</td>
+					<td>5,031,896</td>
+					<td>1,134,770</td>
+				</tr>
+				<tr>
+					<td>8,900만원</td>
+					<td>6,010,047</td>
+					<td>1,432,320</td>
+				</tr>
+				<tr>
+					<td>1억600만원</td>
+					<td>7,016,793</td>
+					<td>1,816,540</td>
+				</tr>
+				<tr>
+					<td>1억2600만원</td>
+					<td>8,045,090</td>
+					<td>2,454,910</td>
+				</tr>		
+			</tbody>
+		</table>	
+	</article>
+</section>
+
+<footer class="footer">
+	Copyright Dave Lee
+</footer>
+</body>
+</html>
