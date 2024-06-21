@@ -8,14 +8,67 @@
 <html>
 <head>
     <style type="text/css">
-	</style>
+table { width:400px;
+        border: 1px solid black; /* border 만 정의할 경우 굵기만 ㄴㅏ타냄 */ 
+        margin-left:auto;
+        margin-right:auto;
+        border-collapse: collapse;
+      
+}
+
+td,th{
+
+    border: 1px solid black;
+    color:darkblue;
+    font-size:12px;
+    font-family:Gulim;
+    text-align:center;
+    color: #424242
+
+
+}
+
+th{
+    padding: 10px
+}
+
+thead{
+    background-color:#CFD8DC
+}
+
+</style>
+
 </head>
 
 <body>
-연봉			월실수령액		공제액(세금)
-7,400만원		5,031,896	1,134,770
-9,200만원  	6,031,916	1,634,750
-1억1000만원	7,026,126	2,140,540
-1억3400만원	8,001,246	3,165,420
+    <table>
+
+        <thead>
+        <tr>
+             <th>연봉</th>	<th>월실수령액</th> <th>공제액(세금)</th>
+</tr>
+</thead>
+    <tbody>
+            <tr>
+                <td>7,400만원</td> <td>5,031,896</td>  <td>1,134,770</td>	
+            </tr>
+
+            <tr>
+
+            <td>9,200만원 </td> <td>6,031,916</td> <td>1,634,750 </td>
+            </tr>
+
+            <tr>
+
+                <td>1억1000만원</td> <td>7,026,126</td> <td>2,140,540</td>
+                </tr>
+
+                
+                <tr>
+                    <td> 1억3400만원</td> <td>8,001,246</td> <td>3,165,420</td>
+                    </tr>
+    </tbody>
+
+</table>
 </body>
 </html>
