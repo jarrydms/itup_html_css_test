@@ -1,0 +1,33 @@
+
+table { width:400px;
+        border: 1px solid black; /* border 만 정의할 경우 굵기만 ㄴㅏ타냄 */ 
+        margin-left:auto;
+        margin-right:auto;
+        border-collapse: collapse;
+      
+}
+
+td,th{
+
+    border: 1px solid black;
+    color:darkblue;
+    font-size:12px;
+    font-family:Gulim;
+    text-align:center;
+    color: #424242;
+
+
+}
+
+th{
+    padding: 10px;
+}
+
+thead{
+    background-color:#CFD8DC;
+}
+
+.testname{
+    font-size: 14px;
+    background-color:  #fffDE7;
+}
