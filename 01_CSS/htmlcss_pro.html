@@ -7,6 +7,11 @@
 <head>
     <meta charset="utf-8">
     <title>상품페이지</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+
     <style type="text/css">
         .productsuggestion {
             font-size: 1.3em;
@@ -15,6 +20,7 @@
             font-weight: bold;
             margin-bottom: 12px;
             margin-left: 12px;
+            font-family: "Sunflower", sans-serif;
         }
 
         .productname {
@@ -23,6 +29,7 @@
             text-align: left;
             font-weight: lighter;
             margin-left: 12px;
+            font-family: "Sunflower", sans-serif;
         }
 
         .sitecenter {
@@ -56,11 +63,93 @@
             margin-bottom: 20px;
             justify-content: space-between;
         }
+        .sitetitle {
+            font-size : 2em;
+            font-weight: bold;
+            font-family:Righteous;
+            margin-bottom:auto;
+            font-family: "Sunflower", sans-serif;
+        }   
+
+        .sitesubtitle{
+            font-size:  1em;
+            font-weight: lighter;
+            margin-bottom: 32px;
+            font-family: "Sunflower", sans-serif;
+
+        }
+
+        .sitefeature{
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 27px;
+            border-bottom: 1px solid #E0E0E0;
+        }
+        .bottomline{
+            border-bottom:1px solid #212121;
+        }
+
+        .fixed-top{
+            position:fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            border-bottom: 1px solid #212121;
+            background-color: #F5F5F5;
+        }
+
+
+        .sitecentertop {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            display:flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sitetopright {
+            display: flex;
+            justify-content: space-between;
+            width:100px;
+        }
+
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 8px;
+            font-size: 1.1em;
+            border-top: 1px solid #212121;
+        }
+
+        a{
+            text-decoration:none;
+            color:black;
+        }
     </style>
-</head>
+    </head>
 
 <body>
-    <br><br>
+    <br><br><br><br>
+<div class="fixed-top">
+    <div class="sitecentertop">
+<img src = "00_IMG/teddylogo.png">
+
+<div class ="sitetopright"> 
+<div class="meuntop"><a href="jarryd.tistory.com">blog</a></div>
+<div class="meuntop"><a href="https://www.fun-coding.orgAbout">About </a></div>
+</div>
+</div>
+</div>
+
+    <div class="sitecenter">
+        <div class = "sitetitle">선물하기 좋은 상품을 판매하는 블로그입니다.</div>
+        <div class = "sitesubtitle">jarry blog 상품</div>
+<div class = "sitefeature"><span class="bottomline">featuerd</span></div>
+</div>
+
     <div class="sitecenter">
         <div class="columnlimit">
             <div class="flexcard">
@@ -95,6 +184,11 @@
             </div>
         </div>
     </div>
+
+<div class = "footer"> 
+    copyright 372 blog
+</div>
+
 </body>
 
 </html>
